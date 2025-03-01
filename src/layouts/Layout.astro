@@ -5,25 +5,33 @@ import '@fontsource-variable/manrope';
 ---
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/lari_ico.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>LARI</title>
-	</head>
-	<body>
-		<Header />
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/lari_ico.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>LARI</title>
+    </head>
+    <body>
+        <Header />
+        <slot />
+    </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		font-family: 'Manrope Variable', sans-serif;
-	}
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        font-family: 'Manrope Variable', sans-serif;
+        --brand-purp-lighter:rgb(104, 111, 209);
+        --brand-purp-light:rgb(76, 81, 158);
+        --brand-purp-dark:rgb(74, 71, 130);
+    }
+
+    p {
+        color: green !important;
+    }
 </style>
